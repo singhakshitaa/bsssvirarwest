@@ -149,6 +149,40 @@
     Developed by <strong>fusionfame</strong>
   </div>
 </footer>
+<script>
+const images=document.querySelectorAll('.gallery-grid img');
+const lightbox=document.getElementById('lightbox');
+const lightboxImg=document.getElementById('lightboxImg');
 
+images.forEach(img=>{
+  img.addEventListener('click',()=>{
+    lightbox.style.display='flex';
+    lightboxImg.src=img.src;
+  });
+});
+
+function closeLightbox(){
+  lightbox.style.display='none';
+}
+function openDonate(){
+  document.getElementById("donateModal").classList.add("active");
+}
+
+function closeDonate(){
+  document.getElementById("donateModal").classList.remove("active");
+}
+
+/* Close popup on outside click */
+document.getElementById("donateModal").addEventListener("click", function(e){
+  if(e.target === this){
+    closeDonate();
+  }
+});
+
+function toggleMenu(){
+  document.getElementById("mainMenu").classList.toggle("active");
+}
+
+</script>
 </body>
 </html>
