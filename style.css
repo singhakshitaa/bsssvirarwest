@@ -1235,7 +1235,11 @@ footer h4{
   .donate-banner p{
     font-size:17px;
   }
+  .brand-text h1{
+    display:none;
+  }
 }
+
 
 
 
