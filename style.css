@@ -163,7 +163,7 @@
 
     /* ================= MANTRA ================= */
     .mantra{background:#fff3d6;padding:14px 0;overflow:hidden}
-    .mantra span{display:inline-block;white-space:nowrap;font-family:"Tiro Devanagari Sanskrit";font-size:26px;animation:marq 18s linear infinite}
+    .mantra span{display:inline-block;white-space:nowrap;font-family:"Tiro Devanagari Sanskrit";font-size:26px;animation:marq 8s linear infinite}
     @keyframes marq{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
 
     section{padding:50px 20px}
@@ -1225,4 +1225,5 @@ footer h4{
     font-size:17px;
   }
 }
+
 
