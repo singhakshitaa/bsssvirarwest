@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TTD Style Header</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="ttd-header">
+
+  <!-- TOP BRAND BAR -->
+  <div class="brand-bar">
+    <img src="bsssvirar.jpeg" alt="TTD Logo" class="brand-img left">
+
+    <div class="brand-text">
+      <h1>बिहार सरस्वती सेवा समिति विरार (प.) </h1>
+      <h2>Bihar Saraswati seva Samiti virar (W) </h2>
+    </div>
+
+    <img src="maa.png" alt="Deity" class="brand-img right">
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav-bar">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="donate.html">Donate now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="content">
+    <h1>About Bihar Saraswati Seva Samiti</h1>
+    <p>Empowering communities through education, culture & service</p>
+  </div>
+</section>
+
+<!-- MANTRA -->
+<div class="mantra"><span>ॐ ऐं सरस्वत्यै नमः ॐ ऐं सरस्वत्यै नमः ॐ ऐं सरस्वत्यै नमः ॐ ऐं सरस्वत्यै नमः ॐ ऐं सरस्वत्यै नमः ॐ ऐं सरस्वत्यै नमः ॐ ऐं सरस्वत्यै नमः ॐ ऐं सरस्वत्यै नमः ॐ ऐं सरस्वत्यै नमः</span></div>
+
+
+<!-- ABOUT CONTENT -->
+<section>
+  <div class="container about-grid">
+    <img src="about.jpeg" alt="About Bihar Saraswati Seva Samiti">
+
+    <div>
+      <h2>Who We Are</h2>
+      <h3>A Non-Profit Devotional & Social Organisation</h3>
+      <p>
+        Bihar Saraswati Seva Samiti, based in Virar West, Mumbai, is a leading
+        non-profit organisation dedicated to preserving cultural values and
+        uplifting society through education, devotion and community service.
+      </p>
+      <p>
+        Our primary focus is organizing the Sarvajanik Saraswati Puja, a sacred
+        celebration that unites people from diverse backgrounds in worship of
+        Goddess Saraswati — the symbol of knowledge, wisdom and art.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION / VISION -->
+<section>
+  <div class="container">
+    <div class="cards">
+      <div class="card">
+        <h4>Our Mission</h4>
+        <p>
+          To promote education, cultural harmony and social welfare through
+          devotional activities and community-driven initiatives.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Our Vision</h4>
+        <p>
+          To build a society rooted in knowledge, values and compassion,
+          empowering future generations.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Our Values</h4>
+        <p>
+          Seva (Service), Sanskar (Values), Samarpan (Dedication) and Unity.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span onclick="closeLightbox()">×</span>
+  <img id="lightboxImg">
+</div>
+<div class="donate-modal" id="donateModal">
+  <div class="donate-box">
+    <span class="donate-close" onclick="closeDonate()">×</span>
+
+    <h2>Donate for a Noble Cause</h2>
+    <p class="donate-sub">Your contribution helps us serve society</p>
+
+    <div class="donate-details">
+      <p><strong>Account Name:</strong>BIHAR SARASWATI SEVA SAMITI</p>
+      <p><strong>Bank Name:</strong> BANK OF BARODA</p>
+      <p><strong>Account Number:</strong>32840100000888</p>
+      <p><strong>IFSC Code:</strong>BARB0VIRARW</p>
+      <p><strong>Branch:</strong> Virar West</p>
+    </div>
+
+    <div class="qr-box">
+      <img src="qr.jpeg" alt="UPI QR Code">
+      <p>Scan & Pay via UPI</p>
+    </div>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h4>ABOUT US</h4>
+      <p>
+        Bihar Saraswati Seva Samiti is the leading non profit organisation located
+        in Virar Maharashtra, with a vision to serve our community, protect our
+        cultural values, inspiring young people and supporting our members in need.
+        Bihar Saraswati Seva Samiti is a social, dharmic and cultural body of Biharis
+        living in Bharat as well as abroad. <strong>‘Help’</strong> is the central motto.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p><span class="footer-icon">📞</span> +91-9892464474 / +91-9819948641</p>
+      <p><span class="footer-icon">✉</span> info@bsss.org.in</p>
+      <p>
+        <span class="footer-icon">📍</span>
+        Shop No: 02, Shyam Krupa Co-op Hsg. Soc, Chankya Chowk,
+        Near Ameya Cricket Ground, Virat Nagar, Virar (West) - 401303
+      </p>
+    </div>
+
+    <!-- OFFICE -->
+    <div class="footer-col">
+      <h4>OUR OFFICE</h4>
+      <p>
+        Bihar Saraswati Seva Samiti<br>
+        Shop No: 02, Shyam Krupa Co-op Hsg. Soc,<br>
+        Near Ameya Cricket Ground,<br>
+        Virat Nagar, Virar (West) - 401303
+      </p>
+      <p><strong>Mobile:</strong> +91-9892464474 / +91-9819948641</p>
+      <p><strong>Email:</strong> info@bsss.org.in</p>
+
+      <div class="footer-social">
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+        <a href="#">▶</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+    © 2024 Bihar Saraswati Seva Samiti. All Copyrights are Reserved |
+    Developed by <strong>fusionfame</strong>
+  </div>
+</footer>
+
+<script>
+const images=document.querySelectorAll('.gallery-grid img');
+const lightbox=document.getElementById('lightbox');
+const lightboxImg=document.getElementById('lightboxImg');
+
+images.forEach(img=>{
+  img.addEventListener('click',()=>{
+    lightbox.style.display='flex';
+    lightboxImg.src=img.src;
+  });
+});
+
+function closeLightbox(){
+  lightbox.style.display='none';
+}
+function openDonate(){
+  document.getElementById("donateModal").classList.add("active");
+}
+
+function closeDonate(){
+  document.getElementById("donateModal").classList.remove("active");
+}
+
+/* Close popup on outside click */
+document.getElementById("donateModal").addEventListener("click", function(e){
+  if(e.target === this){
+    closeDonate();
+  }
+});
+
+function toggleMenu(){
+  document.getElementById("mainMenu").classList.toggle("active");
+}
+
+</script>
+
+</body>
+</html>

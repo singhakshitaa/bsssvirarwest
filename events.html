@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events | Bihar Saraswati Seva Samiti</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ================= EVENTS SECTION ================= */
+.events-section{
+  padding:90px 20px;
+  background:radial-gradient(circle at top,#fff7e6,#ffffff);
+}
+.events-wrap{
+  max-width:1200px;
+  margin:auto;
+}
+
+/* TITLE */
+.events-title{
+  text-align:center;
+  margin-bottom:70px;
+}
+.events-title h2{
+  font-size:42px;
+  font-weight:900;
+  color:#8b0000;
+}
+.events-title p{
+  font-size:18px;
+  color:#555;
+}
+
+/* EVENT ROW */
+.event-row{
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:40px;
+  align-items:center;
+  margin-bottom:80px;
+}
+
+/* LEFT CONTENT */
+.event-info{
+  background:#fff;
+  padding:40px;
+  /* border-radius:26px; */
+  box-shadow:0 18px 50px rgba(0,0,0,.12);
+}
+.event-date{
+  font-size:16px;
+  font-weight:800;
+  color:#b22222;
+  margin-bottom:6px;
+}
+.event-time{
+  font-size:14px;
+  font-weight:700;
+  color:#555;
+  margin-bottom:14px;
+}
+.event-name{
+  font-size:32px;
+  font-weight:900;
+  margin-bottom:16px;
+}
+.event-desc{
+  font-size:16px;
+  color:#555;
+  line-height:1.7;
+}
+.event-badge{
+  display:inline-block;
+  margin-top:20px;
+  padding:8px 18px;
+  background:linear-gradient(135deg,#f6b042,#ff9800);
+  border-radius:30px;
+  font-size:14px;
+  font-weight:800;
+  color:#000;
+}
+
+/* RIGHT IMAGE */
+.event-image{
+  height:380px;
+  /* border-radius:30px; */
+  background-size:cover;
+  background-position:center;
+  box-shadow:0 22px 60px rgba(0,0,0,.25);
+  position:relative;
+  overflow:hidden;
+}
+.event-image::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top,rgba(0,0,0,.15),transparent);
+}
+
+/* BLOGS */
+.blog-list{
+  margin-top:100px;
+}
+.blog-list h3{
+  font-size:34px;
+  font-weight:900;
+  color:#8b0000;
+  margin-bottom:25px;
+}
+.blog-item{
+  background:linear-gradient(90deg,#fff7e6,#ffffff);
+  padding:18px 24px;
+  border-radius:18px;
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
+  margin-bottom:16px;
+  font-weight:700;
+  position:relative;
+}
+.blog-item::before{
+  content:"🪔";
+  position:absolute;
+  right:18px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:26px;
+  opacity:.3;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .event-row{
+    grid-template-columns:1fr;
+  }
+  .event-image{
+    height:260px;
+    order:-1;
+  }
+  .event-name{
+    font-size:26px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="ttd-header">
+  <div class="brand-bar">
+    <img src="bsssvirar.jpeg" class="brand-img left">
+    <div class="brand-text">
+      <h1>बिहार सरस्वती सेवा समिति विरार (प.)</h1>
+      <h2>Bihar Saraswati Seva Samiti Virar (W)</h2>
+    </div>
+    <img src="maa.png" class="brand-img right">
+  </div>
+
+  <nav class="nav-bar">
+    <div class="menu-toggle">☰</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="donate.html">Donate Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= EVENTS ================= -->
+<section class="events-section">
+  <div class="events-wrap">
+
+    <div class="events-title">
+      <h2>Upcoming Events</h2>
+      <p>Celebrating culture, devotion & community together</p>
+    </div>
+
+    <!-- EVENT 1 -->
+    <div class="event-row">
+      <div class="event-info">
+        <div class="event-date">23 January 2026</div>
+        <div class="event-time">⏰ 8:00 AM onwards</div>
+        <div class="event-name">Saraswati Pooja Mahotsav</div>
+        <div class="event-desc">
+          Grand Saraswati Pooja celebration with traditional rituals,
+          aarti, cultural programs and community participation.
+        </div>
+        <div class="event-badge">Main Event</div>
+      </div>
+      <div class="event-image" style="background-image:url('event1.jpeg')"></div>
+    </div>
+
+    <!-- EVENT 2 -->
+    <div class="event-row">
+      <div class="event-info">
+        <div class="event-date">3 February 2025</div>
+        <div class="event-time">⏰ 4:00 PM onwards</div>
+        <div class="event-name">Bhagwati Visarjan</div>
+        <div class="event-desc">
+          Sacred visarjan ceremony with devotional procession,
+          prayers and blessings of Maa Saraswati.
+        </div>
+        <div class="event-badge">Religious Ceremony</div>
+      </div>
+      <div class="event-image" style="background-image:url('event2.jpg')"></div>
+    </div>
+
+    <!-- EVENT 3 -->
+    <div class="event-row">
+      <div class="event-info">
+        <div class="event-date">Year 2025</div>
+        <div class="event-time">📅 Annual Schedule</div>
+        <div class="event-name">Program Guide 2025</div>
+        <div class="event-desc">
+          Complete yearly schedule of rituals, cultural programs
+          and social activities organised by the Samiti.
+        </div>
+        <div class="event-badge">Annual Guide</div>
+      </div>
+      <div class="event-image" style="background-image:url('event3.jpg')"></div>
+    </div>
+
+    <!-- BLOGS -->
+    <div class="blog-list">
+      <h3>Latest Updates & Blogs</h3>
+      <div class="blog-item">Saraswati Pooja Preparation Updates</div>
+      <div class="blog-item">Cultural Programs Highlights</div>
+      <div class="blog-item">Community Welfare Activities</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h4>ABOUT US</h4>
+      <p>
+        Bihar Saraswati Seva Samiti is a devotional NGO based in Virar,
+        working for education, culture and social welfare.
+        <strong>‘Help’</strong> is our central motto.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p>📞 +91-9892464474 / +91-9819948641</p>
+      <p>✉ info@bsss.org.in</p>
+      <p>📍 Virar West, Maharashtra</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>OUR OFFICE</h4>
+      <p>
+        Shop No: 02, Shyam Krupa Co-op Hsg. Soc,<br>
+        Near Ameya Cricket Ground,<br>
+        Virar (West) – 401303
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2024 Bihar Saraswati Seva Samiti | Developed by <strong>FusionFame</strong>
+  </div>
+</footer>
+
+</body>
+</html>
